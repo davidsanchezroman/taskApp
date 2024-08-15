@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Previsualizar Imagen</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="image-container">
+    <img [src]="imageUrl" alt="Previsualización de la imagen" />
+  </div>
+  <ion-button expand="full" (click)="confirm()">Confirmar</ion-button>
+  <ion-button expand="full" color="danger" (click)="retake()">Tomar Otra</ion-button>
+</ion-content>
+
